@@ -34,10 +34,10 @@ CREATE TABLE tb_postagem (
 	Descricao VARCHAR(255) NOT NULL,
 	Imagem VARCHAR(255) NOT NULL,
 	DataPostagem DATE NOT NULL,
-	FK_Usuario INT NOT NULL,
+	FK_Criador INT NOT NULL,
 	FK_Grupos INT NOT NULL,
 	FOREIGN KEY (FK_Grupos) REFERENCES tb_grupos (Id),
-	FOREIGN KEY (FK_Usuario) REFERENCES tb_usuarios (Id),
+	FOREIGN KEY (FK_Criador) REFERENCES tb_usuarios (Id),
 	);
 
 	
